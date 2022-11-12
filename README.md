@@ -1,7 +1,6 @@
 C:\Users\<owner>\AppData\Local\nvim
 
-
-* https://note.com/histone/n/na8ebb8a5909f 
+https://note.com/histone/n/na8ebb8a5909f 
 1.Plugin Manager(https://github.com/junegunn/vim-plug)
   PS:
     iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
