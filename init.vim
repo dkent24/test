@@ -141,7 +141,9 @@ xmap gp <Plug>(yankround-gp)
 nmap gP <Plug>(yankround-gP)
 " nmap <C-p> <Plug>(yankround-prev)
 " nmap <C-n> <Plug>(yankround-next)
-
+" Accelerated
+nmap j <Plug>(accelerated_jk_gj)
+nmap k <Plug>(accelerated_jk_gk)
 
 "// PLUGIN SETTINGS ///////////////////////////////////////////////////
 call plug#begin(stdpath('data') . '/plugged')
@@ -163,6 +165,8 @@ Plug 'LeafCage/yankround.vim'
 Plug 'rhysd/accelerated-jk'
 Plug 'tomtom/tcomment_vim'
 Plug 'anuvyklack/pretty-fold.nvim'
+Plug 'cespare/vim-toml'
+Plug 'machakann/vim-highlightedyank'
 
 " javascrfipt
 Plug 'neovim/node-host', { 'do': 'npm install' }
@@ -208,9 +212,12 @@ let g:indent_guides_start_level = 1
 let g:tigris#enabled = 1
 let g:tigris#on_the_fly_enabled = 1
 let g:tigris#delay = 300
-
-
-
+" highlightedyank
+let g:highlightedyank_highlight_duration = 500
+" lightline
+highlight Pmenu ctermbg=4
+highlight PmenuSel ctermbg=1
+highlight PMenuSbar ctermbg=4
 
 
 
